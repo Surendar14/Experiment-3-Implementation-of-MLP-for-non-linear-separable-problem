@@ -4,11 +4,12 @@
 
 To implement a perceptron for classification using Python
 
-**EQUIPMENTS REQUIRED:**
+## EQUIPMENTS REQUIRED:
 Hardware – PCs
 Anaconda – Python 3.7 Installation / Google Colab /Jupiter Notebook
 
-**RELATED THEORETICAL CONCEPT:**
+## RELATED THEORETICAL CONCEPT:
+
 Exclusive or is a logical operation that outputs true when the inputs differ.For the XOR gate, the TRUTH table will be as follows
 XOR truth table
 
@@ -29,24 +30,25 @@ The inner layers for deeper processing of the inputs are known as hidden layers.
 
 The number of layers in MLP is not fixed and thus can have any number of hidden layers for processing. In the case of MLP, the weights are defined for each hidden layer, which transfers the signal to the next proceeding layer.Using the MLP approach lets us dive into more than two dimensions, which in turn lets us separate the outputs of XOR using multidimensional equations.Each hidden unit invokes an activation function, to range down their output values to 0 or The MLP approach also lies in the class of feed-forward Artificial Neural Network, and thus can only communicate in one direction. MLP solves the XOR problem efficiently by visualizing the data points in multi-dimensions and thus constructing an n-variable equation to fit in the output values using back propagation algorithm
 
-**Algorithm :**
+## Algorithm :
 
-Step 1 : Initialize the input patterns for XOR Gate
+### Step 1 : Initialize the input patterns for XOR Gate
 
-Step 2: Initialize the desired output of the XOR Gate
+### Step 2: Initialize the desired output of the XOR Gate
 
-Step 3: Initialize the weights for the 2 layer MLP with 2 Hidden neuron and 1 output neuron
+### Step 3: Initialize the weights for the 2 layer MLP with 2 Hidden neuron and 1 output neuron
 
-Step 3: Repeat the  iteration  until the losses become constant and minimum
+### Step 4: Repeat the  iteration  until the losses become constant and minimum
 (i)  Compute the output using forward pass output
 (ii) Compute the error  
 (iii) Compute the change in weight ‘dw’ by using backward propagation algorithm.
 (iv) Modify the weight as per delta rule.
 (v)   Append the losses in a list
 
-Step 4 : Test for the XOR patterns.
+### Step 5 : Test for the XOR patterns.
 
-** PROGRAM** 
+## PROGRAM:
+
 ```
 #DEVELOPED BY: Surendar S
 #REG.NO: 212220230051
@@ -125,9 +127,9 @@ predict(w1,w2,test)
 ```
 
 
-OUTPUT:
+## OUTPUT:
 
 ![197165696-2e0e16f1-2dc2-4e87-834e-8d03d24339fc](https://user-images.githubusercontent.com/94828604/232688405-1c9e64a0-4479-40e4-ab6f-6e48765fce29.jpg)
 
-RESULT:
+## RESULT:
 Thus the implementation of MLP for non-linear separable problem is executed successfully.
